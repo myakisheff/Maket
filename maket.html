@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Макет 3</title>
   </head>
   <body>
+    <datalist id="item">
+      <option value="Текст1"></option>
+      <option value="Текст2"></option>
+      <option value="Текст3"></option>
+    </datalist>
+    <datalist id="time">
+      <option value="9:00"></option>
+      <option value="13:00"></option>
+      <option value="17:00"></option>
+      <option value="21:00"></option>
+    </datalist>
+
     <header>
       <a href="#">
         <img src="/" alt="На главную" />
@@ -45,53 +57,53 @@
           of Classical physics: Newtonian mechanics
         </p>
 
-        <section>
+        <article>
           <h3>Business & Finance</h3>
           <p>
             the quick fox jumps over the lazy dog the quick fox jumps over the
             lazy dog
           </p>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <h3>Comsumer Products</h3>
           <p>
             the quick fox jumps over the lazy dog the quick fox jumps over the
             lazy dog
           </p>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <h3>Environmental</h3>
           <p>
             the quick fox jumps over the lazy dog the quick fox jumps over the
             lazy dog
           </p>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <h3>Business & Finance</h3>
           <p>
             the quick fox jumps over the lazy dog the quick fox jumps over the
             lazy dog
           </p>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <h3>Comsumer Products</h3>
           <p>
             the quick fox jumps over the lazy dog the quick fox jumps over the
             lazy dog
           </p>
-        </section>
+        </article>
 
-        <section>
+        <article>
           <h3>Environmental</h3>
           <p>
             the quick fox jumps over the lazy dog the quick fox jumps over the
             lazy dog
           </p>
-        </section>
+        </article>
       </section>
 
       <section>
@@ -100,6 +112,7 @@
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
+
         <video width="310" height="450" poster="#">
           <source src="#" />
           Элемент video не поддерживается вашим браузером.
@@ -107,28 +120,92 @@
       </section>
 
       <section>
-        <h2></h2>
+        <h2>What Clients Say</h2>
+        <p>
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+
+        <article>
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starEmpty.png" alt="Оценка" />
+
+          <p>
+            Slate helps you see how many more days you need to work to reach
+            your financial goal.
+          </p>
+          <img src="#" alt="photo" width="50" height="50" />
+          <h3>Regina Miles</h3>
+          <h4>Designer</h4>
+        </article>
+        <article>
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starEmpty.png" alt="Оценка" />
+
+          <p>
+            Slate helps you see how many more days you need to work to reach
+            your financial goal.
+          </p>
+          <img src="#" alt="photo" width="50" height="50" />
+          <h3>Regina Miles</h3>
+          <h4>Designer</h4>
+        </article>
+        <article>
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starFull.png" alt="Оценка" />
+          <img src="img/starEmpty.png" alt="Оценка" />
+
+          <p>
+            Slate helps you see how many more days you need to work to reach
+            your financial goal.
+          </p>
+          <img src="#" alt="photo" width="50" height="50" />
+          <h3>Regina Miles</h3>
+          <h4>Designer</h4>
+        </article>
       </section>
 
       <section>
-        <h2>Form</h2>
+        <h3>Contact Us</h3>
+        <h2>Make an Appointment</h2>
         <form>
           <p>
-            <label>Name <input type="text" pPlaceholder="Name" /></label>
-          </p>
-          <p>
-            <label>Name <input type="text" pPlaceholder="Name" /></label>
-          </p>
-          <p>
-            <label>Name <input type="text" pPlaceholder="Name" /></label>
+            <label><input type="text" placeholder="Full Name" /></label>
           </p>
           <p>
             <label
-              >Message
-              <textarea name="Message" id="" cols="30" rows="10"></textarea>
+              ><input type="email" placeholder="example@gmail.com"
+            /></label>
+          </p>
+          <p>
+            <label
+              ><input type="text" list="item" placeholder="Please Select"
+            /></label>
+          </p>
+          <p>
+            <label><input type="text" list="time" /></label>
+          </p>
+          <p>
+            <label>
+              <textarea name="Message" cols="30" rows="10"></textarea>
             </label>
           </p>
+          <p><input type="submit" value="Book Appointment" /></p>
         </form>
+
+        <article>
+          <h3>Consulting Agency For Your Business</h3>
+          <p>the quick fox jumps over the lazy dog</p>
+          <a href="#">Contact Us</a>
+        </article>
       </section>
     </main>
 
@@ -147,30 +224,42 @@
 
       <section>
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
+            <li>Legal</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Carrier</a></li>
+            <li><a href="#">We are hiring</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
       </section>
 
       <section>
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
+          <li>Features</li>
+          <li><a href="#">Buisness Marketing</a></li>
+          <li><a href="#">User Analytic</a></li>
+          <li><a href="#">Live Chat</a></li>
+          <li><a href="#">Unlimited Support</a></li>
         </ul>
       </section>
 
       <section>
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
+          <li>Resources</li>
+          <li><a href="#">IOS & Android</a></li>
+          <li><a href="#">Watch a Demo</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">API</a></li>
         </ul>
       </section>
+
+      <h4>Get In Touch</h4>
+      <p>
+        <label>
+          <input type="text" name="Message" />
+          <button>Subscribe</button>
+        </label>
+      </p>
+      <p>Lorem ipsum dolor sit amet</p>
     </footer>
   </body>
 </html>
