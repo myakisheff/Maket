@@ -1,2 +1,2 @@
-# web1
-<a href="https://myakisheff.netlify.app/">Netlify</a>
+# Ссылки на ресурсы
+<a href="https://myakisheff.netlify.app/" target="_blank">Netlify</a>
