@@ -1,0 +1,52 @@
+:root{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    --primary-button-color: #FF7B47;
+}
+
+/*font-weight*/
+#logo, h2, .sub-header, h3{
+    font-weight: 700;
+}
+
+blockquote, footer li, .review-list, form{
+    font-weight: 600;
+}
+
+nav, footer p{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*.First-Class{
+    background-color: #FAFAFA;
+}
+
+.Industry{
+    background-color: #fff;
+}
+
+.video-container{
+    background-color: #F3F3F3;
+}
+
+.reviews{
+    background-color: #FAFAFA;
+}
+
+.contact{
+    background-color: #FAFAFA;
+}
+
+footer{
+    background-color: #252B42;;
+}*/
+
+.button{
+    background-color: var(--primary-button-color);
+}
+

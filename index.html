@@ -4,48 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalizer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <title>Макет 3</title>
   </head>
   <body>
     <header>
       <a href="#">
-        <p>Consultal</p>
+        <p id="logo">Consultal</p>
       </a>
 
-      <button>
+      <button class="nav">
         <img src="img/search.png" alt="Поиск" height="24" width="24" />
       </button>
-      <a href="#"
+      <a href="#" class="nav"
         ><img src="img/cart.png" alt="Купить" height="24" width="24"
       /></a>
-      <button>
+      <button class="nav">
         <img src="img/menu.png" alt="Меню" height="24" width="24" />
       </button>
 
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Product</li>
-          <li>Priceing</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="First-Class">
         <h1>First-Class Business Consultant</h1>
         <p>
           We know how large objects will act, but things on a small scale just
           do not act that way.
         </p>
 
-        <button>Get Quote Now</button>
+        <button class="button">Get Quote Now</button>
         <a href="#">Learn More</a>
       </section>
 
-      <section>
+      <section class="Industry">
         <h2>Industry</h2>
         <p>
           Problems trying to resolve the conflict between the two major realms
@@ -132,7 +139,7 @@
         </article>
       </section>
 
-      <section>
+      <section class="video-container">
         <h2>Who We Are</h2>
         <p>
           Problems trying to resolve the conflict between the two major realms
@@ -145,13 +152,13 @@
         </video>
       </section>
 
-      <section>
+      <section class="reviews">
         <h2>What Clients Say</h2>
         <p>
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics
         </p>
-        <ul>
+        <ul class="review-list">
           <li>
             <img src="img/starFull.png" alt="Оценка" />
             <img src="img/starFull.png" alt="Оценка" />
@@ -202,8 +209,8 @@
         </ul>
       </section>
 
-      <section>
-        <p>Contact Us</p>
+      <section class="contact">
+        <p class="sub-header">Contact Us</p>
         <h2>Make an Appointment</h2>
 
         <datalist id="item">
@@ -240,7 +247,7 @@
               <textarea name="Message" cols="30" rows="10"></textarea>
             </label>
           </p>
-          <p><input type="submit" value="Book Appointment" /></p>
+          <p><input type="submit" value="Book Appointment" class="button"/></p>
         </form>
 
         <h3>Consulting Agency For Your Business</h3>
@@ -250,7 +257,7 @@
     </main>
 
     <footer>
-      <h2>Consultal</h2>
+      <p>Consultal</p>
 
       <div>
         <a href="//facebook.com/" target="_blank"
@@ -268,7 +275,7 @@
       </div>
 
       <div>
-        <p>Company Info</p>
+        <p class="sub-header">Company Info</p>
         <ul>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Carrier</a></li>
@@ -278,7 +285,7 @@
       </div>
 
       <div>
-        <p>Legal</p>
+        <p class="sub-header">Legal</p>
         <ul>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Carrier</a></li>
@@ -288,7 +295,7 @@
       </div>
 
       <div>
-        <p>Features</p>
+        <p class="sub-header">Features</p>
         <ul>
           <li><a href="#">Buisness Marketing</a></li>
           <li><a href="#">User Analytic</a></li>
@@ -298,7 +305,7 @@
       </div>
 
       <div>
-        <p>Resources</p>
+        <p class="sub-header">Resources</p>
         <ul>
           <li><a href="#">IOS & Android</a></li>
           <li><a href="#">Watch a Demo</a></li>
@@ -307,12 +314,12 @@
         </ul>
       </div>
 
-      <p>Get In Touch</p>
+      <p class="sub-header">Get In Touch</p>
       <form>
         <label>
           <input type="text" name="Message" />
         </label>
-        <p><input type="submit" value="Subscribe" /></p>
+        <p><input type="submit" value="Subscribe" class="button" /></p>
       </form>
       <p>Lorem ipsum dolor sit amet</p>
     </footer>
