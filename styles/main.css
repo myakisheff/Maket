@@ -2,27 +2,155 @@
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    --primary-button-color: #FF7B47;
+    --primary-color: #FF7B47;
 }
 
 /*font-weight*/
-#logo, h2, .sub-header, h3{
+h1{
+    font-weight: 700;
+    line-height: 5.7rem;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.02rem;
+    color: #252B42;
+}
+
+#main-subtitle{
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: center;
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+.subtitle
+{
+    text-align: center;
+    line-height: 2rem;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 5.7rem;
+    margin: 0;
+}
+
+h3{
+    font-weight:  700;
+}
+#logo{
+    font-weight: 700;
+    line-height:  3.2rem;
+    font-size: 2.4rem;
+    text-align: left;
+    margin-left: 3.5rem;
+    margin-top: 3.6rem;
+    color:rgba(0, 0, 0);
+}
+
+.Industry article{
+    border: 1px solid #E8E8E8;
+    margin: 15px;
+    padding: 35px 40px;
+}
+
+.sub-header{
     font-weight: 700;
 }
 
-blockquote, footer li, .review-list, form{
+blockquote{
     font-weight: 600;
 }
 
-nav, footer p{
+nav{
     font-weight: 400;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.nav{
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 a{
     text-decoration: none;
 }
 
-/*.First-Class{
+#get_quot{
+    background-color: var(--primary-color);
+    border-radius: 3.7rem;
+    height: 4.8rem;
+    width: 18.7rem;
+}
+
+#learn_more{
+    border: 1px solid #0D5C63;
+    height: 4.8rem;
+    border-radius: 3.7rem;
+    width: 15.7rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.button{
+    background-color: var(--primary-color);
+    border-radius: 3.7rem;
+    height: 4.8rem;
+    width: 18.7rem;
+}
+
+video{
+    margin-top: 6rem;
+    width: 306px;
+    height: 442px;
+}
+
+.name{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02rem;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.review-list li{
+    border: .1rem solid #DEDEDE;
+    border-radius: .5rem;
+    margin: 1.5rem;
+    padding: 30px 35px;
+}
+
+.post{
+    color: #252B42;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02rem;
+}
+
+p, blockquote{
+    color: #737373;
+    margin: 0;
+}
+
+.First-Class{
     background-color: #FAFAFA;
 }
 
@@ -44,9 +172,5 @@ a{
 
 footer{
     background-color: #252B42;;
-}*/
-
-.button{
-    background-color: var(--primary-button-color);
 }
 
