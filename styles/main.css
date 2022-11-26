@@ -2,15 +2,36 @@
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    line-height: 2rem;
     --primary-color: #FF7B47;
+    --primary-bg-color: #FAFAFA;
+    --primary-bgfooter-color: #252B42;
+    --primary-fttext-color: #fff;
+    --primary-text-color: #737373;
+    box-sizing: border-box;
 }
 
-/*font-weight*/
+*, ::after, ::before{
+    box-sizing: inherit;
+    border-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 2.5rem;
+    background-color: #F6F6F6;
+}
+
 h1{
+    margin-top: 0;
     font-weight: 700;
     line-height: 5.7rem;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     font-style: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.02rem;
@@ -21,8 +42,12 @@ h1{
     font-weight: 500;
     line-height: 3rem;
     text-align: center;
-    margin-left: 16%;
-    margin-right: 16%;
+    font-size: 2rem;
+}
+
+section{
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
 }
 
 .subtitle
@@ -33,15 +58,25 @@ h1{
 
 h2{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
     line-height: 5.7rem;
     margin: 0;
 }
 
+article{
+    margin-bottom: 0;
+}
+
+article h3{
+    display: inline-block;
+    text-align: center;
+}
+
 h3{
     font-weight:  700;
 }
+
 #logo{
     font-weight: 700;
     line-height:  3.2rem;
@@ -53,9 +88,9 @@ h3{
 }
 
 .Industry article{
-    border: 1px solid #E8E8E8;
-    margin: 15px;
-    padding: 35px 40px;
+    border: .1rem solid #E8E8E8;
+    margin: 1.5rem;
+    padding: 3.5rem 4rem;
 }
 
 .sub-header{
@@ -64,25 +99,38 @@ h3{
 
 blockquote{
     font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.nav{
+    background-color: transparent;
+    border: none;
 }
 
 nav{
     font-weight: 400;
     line-height: 4.5rem;
     text-align: center;
+    font-size: 3rem;
+    margin: 10rem 0 10rem 0;
 }
 
-.nav{
-    
+nav a{
+    color: var(--primary-text-color);
+}
+
+nav li{
+    margin: 3rem 0 3rem 0;
 }
 
 li{
     list-style-type: none;
 }
 
-ul {
+ul{
     margin-left: 0;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 a{
@@ -94,6 +142,7 @@ a{
     border-radius: 3.7rem;
     height: 4.8rem;
     width: 18.7rem;
+    color: #fff;
 }
 
 #learn_more{
@@ -101,20 +150,62 @@ a{
     height: 4.8rem;
     border-radius: 3.7rem;
     width: 15.7rem;
-    background-color: rgba(255, 255, 255, 0);
+    color: #0D5C63;
+    background-color:rgb(255, 255, 255, 0);
+}
+
+.pre-MakeApp{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #252B42;
 }
 
 .button{
     background-color: var(--primary-color);
     border-radius: 3.7rem;
     height: 4.8rem;
-    width: 18.7rem;
+    width: 30rem;
+    text-align: center;
+    color: var(--primary-fttext-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: .02rem;
+}
+
+.button a{
+    color: var(--primary-fttext-color);
+}
+
+#footer-sub{
+    display: inline-block;
+    background-color: #E6E6E6;
+    border: 0.1rem solid #E6E6E6;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+#footer-sub input{
+    height: 5.8rem;
+    margin-right: 0;
+}
+
+#footer-sub p{
+    display: inline-block;
+    margin-left: 0;
+}
+
+#subscribe{
+    border-radius: 0;
+    background-color: var(--primary-color);
+    color: var(--primary-fttext-color)
 }
 
 video{
     margin-top: 6rem;
-    width: 306px;
-    height: 442px;
 }
 
 .name{
@@ -122,7 +213,7 @@ video{
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 }
 
 .video{
@@ -133,8 +224,8 @@ video{
 .review-list li{
     border: .1rem solid #DEDEDE;
     border-radius: .5rem;
-    margin: 1.5rem;
-    padding: 30px 35px;
+    margin-top: 1.5rem;
+    padding: 3rem 3.5rem;
 }
 
 .post{
@@ -142,16 +233,17 @@ video{
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 }
 
 p, blockquote{
-    color: #737373;
+    color: var(--primary-text-color);
     margin: 0;
+    font-size: 1.4rem;
 }
 
 .First-Class{
-    background-color: #FAFAFA;
+    background-color: var(--primary-bg-color);
 }
 
 .Industry{
@@ -159,18 +251,72 @@ p, blockquote{
 }
 
 .video-container{
-    background-color: #F3F3F3;
+    background: linear-gradient(to bottom, #F3F3F3 50%, black 0%);
 }
 
 .reviews{
-    background-color: #FAFAFA;
+    background-color: var(--primary-bg-color);
 }
 
 .contact{
-    background-color: #FAFAFA;
+    background-color:  var(--primary-bg-color);
+}
+
+.contact h2{
+    text-align: left;
+}
+
+.contact h3{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: .01rem;
+    margin-bottom: 0;
+}
+
+#appointment input, #appointment textarea{
+    width: 100%;
+    margin: 2rem;
+    border-radius: .5rem;
+    border: 1px solid var(--primary-text-color);
+}
+
+#appointment input{
+    height: 5rem;
 }
 
 footer{
-    background-color: #252B42;;
+    background-color: var(--primary-bgfooter-color);
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
 }
 
+footer p, footer a{
+    line-height: 2.4rem;
+    color: var(--primary-fttext-color);
+}
+
+footer input{
+    background-color: #F9F9F9;
+    color: var(--primary-fttext-color)
+}
+
+.social-links img{
+    margin-right: 2rem;
+    margin-bottom: 11rem;
+    margin-top: 5rem;
+}
+
+#footerhead{
+    display: inline-block;
+    margin-top: 4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+#postSubTxt{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
