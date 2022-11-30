@@ -38,6 +38,19 @@ h1{
     color: #252B42;
 }
 
+.wrapper{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    gap: .2rem;
+    max-width: 117rem;
+}
+
+.wrapper .nav{
+    align-self: flex-end;
+}
+
 #main-subtitle{
     font-weight: 500;
     line-height: 3rem;
@@ -65,7 +78,11 @@ h2{
 }
 
 article{
+    display: inline-block;
     margin-bottom: 0;
+    width: 33rem;
+    height: 20rem;
+    padding: 3.5rem 4rem 3.5rem 4rem;
 }
 
 article h3{
@@ -81,9 +98,8 @@ h3{
     font-weight: 700;
     line-height:  3.2rem;
     font-size: 2.4rem;
+    margin-right: auto;
     text-align: left;
-    margin-left: 3.5rem;
-    margin-top: 3.6rem;
     color:rgba(0, 0, 0);
 }
 
@@ -102,9 +118,33 @@ blockquote{
     line-height: 2.4rem;
 }
 
+blockquote p{
+    display: block;
+    width: auto;
+}
+
+.name{
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: .02rem;
+}
+
+.post{
+    display: inline-block;
+    color: #252B42;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: .02rem;
+}
+
 .nav{
     background-color: transparent;
     border: none;
+    height: 3.6rem;
 }
 
 nav{
@@ -146,7 +186,7 @@ a{
 }
 
 #learn_more{
-    border: 1px solid #0D5C63;
+    border: .1rem solid #0D5C63;
     height: 4.8rem;
     border-radius: 3.7rem;
     width: 15.7rem;
@@ -183,7 +223,7 @@ a{
 #footer-sub{
     display: inline-block;
     background-color: #E6E6E6;
-    border: 0.1rem solid #E6E6E6;
+    border: .1rem solid #E6E6E6;
     border-radius: .5rem;
     overflow: hidden;
 }
@@ -208,14 +248,6 @@ video{
     margin-top: 6rem;
 }
 
-.name{
-    color: var(--primary-color);
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    letter-spacing: .02rem;
-}
-
 .video{
     display: flex;
     justify-content: center;
@@ -226,14 +258,6 @@ video{
     border-radius: .5rem;
     margin-top: 1.5rem;
     padding: 3rem 3.5rem;
-}
-
-.post{
-    color: #252B42;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    letter-spacing: .02rem;
 }
 
 p, blockquote{
