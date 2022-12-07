@@ -60,6 +60,8 @@ h1{
 }
 
 #main-subtitle{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-weight: 500;
     line-height: 3rem;
     text-align: center;
@@ -75,6 +77,14 @@ section{
 {
     text-align: center;
     line-height: 2rem;
+}
+
+#prebuttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 h2{
@@ -125,10 +135,7 @@ h3{
 
 .person{
     display: flex;
-}
-
-.person p{
-    margin-left: 1.5rem;
+    gap: 1.5rem;
 }
 
 .name{
