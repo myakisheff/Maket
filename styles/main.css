@@ -77,9 +77,10 @@ h2{
     margin: 0;
 }
 
-article{
+.Industry article{
+    border: .1rem solid #E8E8E8;
+    margin: 1.5rem;
     display: inline-block;
-    margin-bottom: 0;
     width: 33rem;
     height: 20rem;
     padding: 3.5rem 4rem 3.5rem 4rem;
@@ -103,24 +104,8 @@ h3{
     color:rgba(0, 0, 0);
 }
 
-.Industry article{
-    border: .1rem solid #E8E8E8;
-    margin: 1.5rem;
-    padding: 3.5rem 4rem;
-}
-
 .sub-header{
     font-weight: 700;
-}
-
-blockquote{
-    font-weight: 600;
-    line-height: 2.4rem;
-}
-
-blockquote p{
-    display: block;
-    width: auto;
 }
 
 .name{
@@ -241,7 +226,8 @@ a{
 #subscribe{
     border-radius: 0;
     background-color: var(--primary-color);
-    color: var(--primary-fttext-color)
+    color: var(--primary-fttext-color);
+    width: 12rem;
 }
 
 video{
@@ -253,11 +239,30 @@ video{
     justify-content: center;
 }
 
+.reviews{
+    background-color: #F3F3F3;
+}
+
 .review-list li{
+    display: inline-block;
     border: .1rem solid #DEDEDE;
     border-radius: .5rem;
     margin-top: 1.5rem;
     padding: 3rem 3.5rem;
+    width: 33rem;
+    height: 24.4rem;
+    margin: 1.5rem;
+    background-color: var(--primary-bg-color);
+}
+
+blockquote{
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+blockquote p{
+    display: block;
+    width: auto;
 }
 
 p, blockquote{
@@ -275,11 +280,7 @@ p, blockquote{
 }
 
 .video-container{
-    background: linear-gradient(to bottom, #F3F3F3 50%, black 0%);
-}
-
-.reviews{
-    background-color: var(--primary-bg-color);
+    background-image: linear-gradient(to bottom, #F3F3F3 50%, black 0%);
 }
 
 .contact{
@@ -337,6 +338,19 @@ footer input{
     line-height: 3.2rem;
     font-weight: 700;
     font-size: 2.4rem;
+}
+
+.footer-info{
+    display: inline-block;
+    width: 15rem;
+    margin: 1.5rem;
+
+    /* display: flex;
+    flex-direction: row; */
+}
+
+#GetTouch{
+    width: 32rem;
 }
 
 #postSubTxt{
