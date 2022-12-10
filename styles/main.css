@@ -130,6 +130,7 @@ article h3{
 }
 
 h3{
+    display: inline;
     font-weight:  700;
 }
 
@@ -240,9 +241,21 @@ a{
     margin: 0;
 }
 
+.bookapp{
+    background-color: var(--primary-color);
+    color: var(--primary-fttext-color);
+    border-radius: .5rem;
+    height: 4.8rem;
+    width: 30rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: .02rem;
+}
+
 .button{
     display: block;
-    align-self: flex-end;
     background-color: var(--primary-color);
     border-radius: .5rem;
     height: 4.8rem;
