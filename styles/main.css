@@ -23,19 +23,34 @@ body{
 
 header{
     padding: 2.5rem;
-    background-color: #F6F6F6;
+    background-color: #F7F7F7;
 }
 
 h1{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
     margin-top: 0;
-    font-weight: 700;
-    line-height: 5.7rem;
+    font-weight: 800;
+    line-height: 8rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5.8rem;
     font-style: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.02rem;
     color: #252B42;
+}
+
+#main-subtitle{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 54rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .wrapper{
@@ -53,19 +68,11 @@ h1{
     justify-content: flex-end;
     gap: .2rem;
     max-width: 117rem;
+    margin-bottom: 8rem;
 }
 
 .navbar .nav{
     align-self: flex-end;
-}
-
-#main-subtitle{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    font-weight: 500;
-    line-height: 3rem;
-    text-align: center;
-    font-size: 2rem;
 }
 
 section{
@@ -95,13 +102,19 @@ h2{
     margin: 0;
 }
 
+.Industry{
+    padding-top: 7.5rem;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
 .Industry article{
     border: .1rem solid #E8E8E8;
     margin: 1.5rem;
     display: inline-block;
     width: 33rem;
     height: 20rem;
-    padding: 3.5rem 4rem 3.5rem 4rem;
+    padding: 3.5rem 4rem 3.5rem 4rem;  
 }
 
 article h3{
@@ -165,7 +178,7 @@ nav{
     line-height: 4.5rem;
     text-align: center;
     font-size: 3rem;
-    margin: 10rem 0 10rem 0;
+    margin-bottom: 8rem;
 }
 
 nav a{
@@ -215,11 +228,27 @@ a{
     color: #252B42;
 }
 
+#contactus{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#contactus h3{
+    padding: 0;
+    margin: 0;
+}
+
 .button{
+    display: block;
+    align-self: flex-end;
     background-color: var(--primary-color);
-    border-radius: 3.7rem;
+    border-radius: .5rem;
     height: 4.8rem;
     width: 30rem;
+    margin-right: 3.8rem;
+    align-self: center;
     text-align: center;
     color: var(--primary-fttext-color);
     font-style: normal;
@@ -259,7 +288,8 @@ a{
 }
 
 video{
-    margin-top: 6rem;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
 }
 
 .video{
@@ -269,6 +299,10 @@ video{
 
 .reviews{
     background-color: #F3F3F3;
+}
+
+.review-list{
+    text-align: center;
 }
 
 .review-list li{
@@ -299,14 +333,16 @@ p{
 
 .First-Class{
     background-color: var(--primary-bg-color);
+
 }
 
-.Industry{
-    background-color: #fff;
+.First-Class2{
+    display: none;
 }
 
 .video-container{
     background-image: linear-gradient(to bottom, #F3F3F3 50%, black 0%);
+    padding-top: 8rem;
 }
 
 .contact{
@@ -325,8 +361,12 @@ p{
     margin-bottom: 0;
 }
 
+#appointment{
+    text-align: center;
+}
+
 #appointment input, #appointment textarea{
-    width: 100%;
+    width: 28.4rem;
     margin: 2rem;
     border-radius: .5rem;
     border: 1px solid var(--primary-text-color);
@@ -384,4 +424,31 @@ footer input{
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 2.8rem;
+}
+
+@media screen and (min-width: 700px){
+    #prebuttons{
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 8rem;
+    }
+
+    header{
+        background-image: url(/img/Head-bg.jpg);
+        background-repeat:round;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .First-Class2{
+        display: none;
+    }
+
+    .First-Class{
+        display: block;
+        background-color: rgb(255, 255, 255, 0);
+    }
 }
