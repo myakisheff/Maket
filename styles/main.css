@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-*, ::after, ::before{
+*, *:after, *:before{
     box-sizing: inherit;
     border-style: none;
 }
@@ -22,8 +22,8 @@ body{
 }
 
 header{
-    padding: 2.5rem;
     background-color: #F7F7F7;
+    padding-top: 2.5rem;
 }
 
 h1{
@@ -61,6 +61,8 @@ h1{
     padding-right: 1.6rem;
 }
 
+/* сверху | справа | снизу | слева */
+
 .navbar{
     display: flex;
     margin-left: auto;
@@ -68,7 +70,7 @@ h1{
     justify-content: flex-end;
     gap: .2rem;
     max-width: 117rem;
-    margin-bottom: 8rem;
+    margin: 0 2.5rem 2.5rem 8rem;
 }
 
 .navbar .nav{
@@ -104,7 +106,7 @@ h2{
 
 .Industry{
     padding-top: 7.5rem;
-    background-color: #FAFAFA;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -260,7 +262,7 @@ a{
     border-radius: .5rem;
     height: 4.8rem;
     width: 30rem;
-    margin-right: 3.8rem;
+   /*  margin-right: 3.8rem; */
     align-self: center;
     text-align: center;
     color: var(--primary-fttext-color);
@@ -347,10 +349,6 @@ p{
 .First-Class{
     background-color: var(--primary-bg-color);
 
-}
-
-.First-Class2{
-    display: none;
 }
 
 .video-container{
@@ -448,15 +446,11 @@ footer input{
     }
 
     header{
-        background-image: url(/img/Head-bg.jpg);
+        background-image: url(../img/Head-bg.jpg);
         background-repeat:round;
     }
 
     nav{
-        display: none;
-    }
-
-    .First-Class2{
         display: none;
     }
 
