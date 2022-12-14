@@ -24,6 +24,12 @@ body{
 header{
     background-color: #F7F7F7;
     padding-top: 2.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.navlinks{
+    display: none;
 }
 
 h1{
@@ -31,10 +37,10 @@ h1{
     margin-right: auto;
     max-width: 64rem;
     margin-top: 0;
-    font-weight: 800;
-    line-height: 8rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    font-size: 4rem;
     text-align: center;
-    font-size: 5.8rem;
     font-style: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     letter-spacing: 0.02rem;
@@ -56,12 +62,8 @@ h1{
 .wrapper{
     margin-left: auto;
     margin-right: auto;
-    max-width: 117rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    max-width: 105rem;
 }
-
-/* сверху | справа | снизу | слева */
 
 .navbar{
     display: flex;
@@ -70,7 +72,7 @@ h1{
     justify-content: flex-end;
     gap: .2rem;
     max-width: 117rem;
-    margin: 0 2.5rem 2.5rem 8rem;
+    margin: 0 auto 8rem auto;
 }
 
 .navbar .nav{
@@ -78,12 +80,11 @@ h1{
 }
 
 section{
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 
-.subtitle
-{
+.subtitle{
     text-align: center;
     line-height: 2rem;
 }
@@ -108,13 +109,20 @@ h2{
     padding-top: 7.5rem;
     background-color: #fff;
     text-align: center;
+    padding-bottom: 16rem;
+}
+
+.Industry .wrapper{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Industry article{
     border: .1rem solid #E8E8E8;
-    margin: 1.5rem;
-    display: inline-block;
-    width: 33rem;
+    flex-direction: row;
+    width: 32.8rem;
     height: 20rem;
     padding: 3.5rem 4rem 3.5rem 4rem;  
 }
@@ -232,41 +240,53 @@ a{
 }
 
 #contactus{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+#contactus .wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    align-items: center;
+    gap: 5rem;
 }
 
 #contactus h3{
+    display: block;
     padding: 0;
     margin: 0;
+    padding-bottom: 1rem;
 }
 
-.bookapp{
+#appointment .bookapp{
+    border: 0 none #E6E6E6;
     background-color: var(--primary-color);
     color: var(--primary-fttext-color);
     border-radius: .5rem;
     height: 4.8rem;
-    width: 30rem;
+    width: 22.4rem;
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 2.8rem;
     letter-spacing: .02rem;
+    margin-bottom: 9rem;
 }
 
 .button{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: var(--primary-color);
-    border-radius: .5rem;
-    height: 4.8rem;
-    width: 30rem;
-   /*  margin-right: 3.8rem; */
-    align-self: center;
-    text-align: center;
     color: var(--primary-fttext-color);
-    font-style: normal;
+    border-radius: .5rem;
+    height: 5.8rem;
+    width: 28.3rem;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 2.8rem;
@@ -277,34 +297,36 @@ a{
     color: var(--primary-fttext-color);
 }
 
-#footer-sub{
+.footer-sub{
+    width: 32rem;
+    height: 5.8rem;
     display: inline-block;
     background-color: #E6E6E6;
     border: .1rem solid #E6E6E6;
     border-radius: .5rem;
-    overflow: hidden;
 }
 
-#footer-sub input{
-    height: 5.8rem;
-    margin-right: 0;
+.footer-sub input{
+    height: 5.6rem;
+    width: 20rem;
 }
 
-#footer-sub p{
+.footer-sub p{
     display: inline-block;
     margin-left: 0;
 }
 
 #subscribe{
-    border-radius: 0;
+    border-radius: 0 .5rem .5rem 0;
     background-color: var(--primary-color);
     color: var(--primary-fttext-color);
-    width: 12rem;
+    width: 11.5rem;
 }
 
 video{
     margin-top: 5rem;
     margin-bottom: 8rem;
+    width: 30.6rem;
 }
 
 .video{
@@ -313,22 +335,26 @@ video{
 }
 
 .reviews{
+    /* сверху | справа | снизу | слева */
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     background-color: #F3F3F3;
 }
 
 .review-list{
-    text-align: center;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .review-list li{
     display: inline-block;
     border: .1rem solid #DEDEDE;
     border-radius: .5rem;
-    margin-top: 1.5rem;
     padding: 3rem 3.5rem;
-    width: 33rem;
+    width: 32.9rem;
     height: 24.4rem;
-    margin: 1.5rem;
     background-color: var(--primary-bg-color);
 }
 
@@ -356,7 +382,19 @@ p{
     padding-top: 8rem;
 }
 
+.contactform{
+    background-image: url(../img/contact-background.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 9rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
 .contact{
+    padding: 0;
+    margin: 0;
     background-color:  var(--primary-bg-color);
 }
 
@@ -373,18 +411,36 @@ p{
 }
 
 #appointment{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 61rem;
     text-align: center;
 }
 
-#appointment input, #appointment textarea{
+#appointment input{
     width: 28.4rem;
-    margin: 2rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--primary-text-color);
+}
+
+#appointment textarea{
+    margin: 1rem;
+    width: 59rem;
     border-radius: .5rem;
     border: 1px solid var(--primary-text-color);
 }
 
 #appointment input{
     height: 5rem;
+}
+
+#ff{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 footer{
@@ -394,8 +450,12 @@ footer{
     padding-bottom: 7rem;
 }
 
-footer p, footer a{
+footer p{
     line-height: 2.4rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+
+letter-spacing: .01rem;
     color: var(--primary-fttext-color);
 }
 
@@ -418,13 +478,17 @@ footer input{
     font-size: 2.4rem;
 }
 
+footer a{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: .02rem;
+    color: #BDBDBD;
+}
+
 .footer-info{
     display: inline-block;
     width: 15rem;
-    margin: 1.5rem;
-
-    /* display: flex;
-    flex-direction: row; */
 }
 
 #GetTouch{
@@ -445,9 +509,23 @@ footer input{
         padding-bottom: 8rem;
     }
 
+/*     .navlinks{
+        display: inline;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    } */
+
+    h1{
+        font-weight: 800;
+        line-height: 8rem;
+        font-size: 5.8rem;
+    }
+
     header{
         background-image: url(../img/Head-bg.jpg);
-        background-repeat:round;
+        background-size: 100% 100%;
+        background-position: center;
     }
 
     nav{
@@ -457,5 +535,20 @@ footer input{
     .First-Class{
         display: block;
         background-color: rgb(255, 255, 255, 0);
+    }
+
+    #contactus .wrapper{
+        flex-direction: row;
+    }
+
+    .button{
+        width: 16rem;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    .contactform{
+        background-size: 100% 100%;
+        background-position: center;
     }
 }

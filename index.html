@@ -16,40 +16,49 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <a href="#" id="logo">Consultal</a>
-        <button class="nav">
-          <img src="img/search.svg" alt="Поиск" />
-        </button>
-        <button class="nav"><img src="img/cart.svg" alt="Купить" /></button>
-        <button class="nav">
-          <img src="img/menu.svg" alt="Меню" />
-        </button>
-      </div>
+      <div class="wrapper">
+        <div class="navbar">
+          <a href="#" id="logo">Consultal</a>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+          <div class="navlinks">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+          </div>
 
-      <section class="First-Class">
-          <h1>First-Class Business Consultant</h1>
-          <p id="main-subtitle">
-            We know how large objects will act, but things on a small scale just
-            do not act that way.
-          </p>
-
-          <div id="prebuttons">
-            <button id="get_quot">Get Quote Now</button>
-            <button id="learn_more">Learn More</button>
-
+          <button class="nav">
+            <img src="img/search.svg" alt="Поиск" />
+          </button>
+          <button class="nav"><img src="img/cart.svg" alt="Купить" /></button>
+          <button class="nav">
+            <img src="img/menu.svg" alt="Меню" />
+          </button>
         </div>
-      </section>
 
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <section class="First-Class">
+            <h1>First-Class Business Consultant</h1>
+            <p id="main-subtitle">
+              We know how large objects will act, but things on a small scale just
+              do not act that way.
+            </p>
+
+            <div id="prebuttons">
+              <button id="get_quot">Get Quote Now</button>
+              <button id="learn_more">Learn More</button>
+
+          </div>
+        </section>
+      </div>
     </header>
 
     <main>
@@ -58,12 +67,13 @@
 
       <section class="Industry">
         <div class="wrapper">
-          <h2>Industry</h2>
-          <p class="subtitle">
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics
-          </p>
-
+          <div>
+            <h2>Industry</h2>
+            <p class="subtitle">
+              Problems trying to resolve the conflict between the two major realms
+              of Classical physics: Newtonian mechanics
+            </p>
+          </div>
           <article>
             <div class="article-header">
               <img
@@ -166,7 +176,7 @@
           </p>
 
           <div class="video">
-            <video width="306" controls="controls" height="442" poster="img/video-poster.jpg">
+            <video controls="controls" height="442" poster="img/video-poster.jpg">
               <!-- <source src="video/testVideo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
               <source src="#">
               Элемент video не поддерживается вашим браузером.
@@ -192,7 +202,7 @@
               </blockquote>
 
               <div class="person">
-                <img src="img/photo.png" alt="photo" width="50" height="50" />
+                <img src="img/manbeard.png" alt="photo" width="50" height="50" />
                 <div>
                   <p class="name">Regina Miles</p>
                   <p class="post">Designer</p>
@@ -209,7 +219,7 @@
               </blockquote>
 
               <div class="person">
-                <img src="img/photo.png" alt="photo" width="50" height="50" />
+                <img src="img/man.png" alt="photo" width="50" height="50" />
                 <div>
                   <p class="name">Regina Miles</p>
                   <p class="post">Designer</p>
@@ -226,7 +236,7 @@
               </blockquote>
 
               <div class="person">
-                <img src="img/photo.png" alt="photo" width="50" height="50" />
+                <img src="img/woman.png" alt="photo" width="50" height="50" />
                 <div>
                   <p class="name">Regina Miles</p>
                   <p class="post">Designer</p>
@@ -238,51 +248,54 @@
       </section>
 
       <section class="contact">
-        <div class="wrapper">
-          <p class="pre-MakeApp">Contact Us</p>
-          <h2>Make an Appointment</h2>
+        <div class="contactform">
+          <div class="wrapper">
+            <p class="pre-MakeApp">Contact Us</p>
+            <h2>Make an Appointment</h2>
 
-          <datalist id="item">
-            <option value="Текст1"></option>
-            <option value="Текст2"></option>
-            <option value="Текст3"></option>
-          </datalist>
-          <datalist id="time">
-            <option value="9:00"></option>
-            <option value="13:00"></option>
-            <option value="17:00"></option>
-            <option value="21:00"></option>
-          </datalist>
+            <datalist id="item">
+              <option value="Текст1"></option>
+              <option value="Текст2"></option>
+              <option value="Текст3"></option>
+            </datalist>
+            <datalist id="time">
+              <option value="9:00"></option>
+              <option value="13:00"></option>
+              <option value="17:00"></option>
+              <option value="21:00"></option>
+            </datalist>
 
-          <form id="appointment">
-            <p>
-              <label><input type="text" placeholder="Full Name" /></label>
-            </p>
-            <p>
-              <label
-                ><input type="email" placeholder="example@gmail.com"
-              /></label>
-            </p>
-            <p>
-              <label
-                ><input type="text" list="item" placeholder="Please Select"
-              /></label>
-            </p>
-            <p>
-              <label><input type="text" list="time" /></label>
-            </p>
-            <p>
-              <label>
-                <textarea name="Message" cols="30" rows="10"></textarea>
-              </label>
-            </p>
-            <p>
-              <input type="submit" value="Book Appointment" class="bookapp" />
-            </p>
-          </form>
-          
-          <div id="contactus">
-            <div>
+            <form id="appointment">
+              <p>
+                <label><input type="text" placeholder="Full Name" /></label>
+              </p>
+              <p>
+                <label
+                  ><input type="email" placeholder="example@gmail.com"
+                /></label>
+              </p>
+              <p>
+                <label
+                  ><input type="text" list="item" placeholder="Please Select"
+                /></label>
+              </p>
+              <p>
+                <label><input type="text" list="time" placeholder="4:00 Available"/></label>
+              </p>
+              <p>
+                <label>
+                  <textarea name="Message" cols="30" rows="10"></textarea>
+                </label>
+              </p>
+              <p>
+                <input type="submit" value="Book Appointment" class="bookapp" />
+              </p>
+            </form>
+          </div>
+        </div>  
+        <div id="contactus">
+          <div class="wrapper">
+            <div id="conttext">
               <h3>Consulting Agency For Your Business</h3>
               <p>the quick fox jumps over the lazy dog</p>
             </div>
@@ -311,55 +324,57 @@
           /></a>
         </div>
 
-        <div class="footer-info">
-          <p class="sub-header">Company Info</p>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
+        <div id="ff">
+          <div class="footer-info">
+            <p class="sub-header">Company Info</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-info">
-          <p class="sub-header">Legal</p>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Carrier</a></li>
-            <li><a href="#">We are hiring</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
+          <div class="footer-info">
+            <p class="sub-header">Legal</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-info">
-          <p class="sub-header">Features</p>
-          <ul>
-            <li><a href="#">Buisness Marketing</a></li>
-            <li><a href="#">User Analytic</a></li>
-            <li><a href="#">Live Chat</a></li>
-            <li><a href="#">Unlimited Support</a></li>
-          </ul>
-        </div>
+          <div class="footer-info">
+            <p class="sub-header">Features</p>
+            <ul>
+              <li><a href="#">Buisness Marketing</a></li>
+              <li><a href="#">User Analytic</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-info">
-          <p class="sub-header">Resources</p>
-          <ul>
-            <li><a href="#">IOS & Android</a></li>
-            <li><a href="#">Watch a Demo</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">API</a></li>
-          </ul>
-        </div>
+          <div class="footer-info">
+            <p class="sub-header">Resources</p>
+            <ul>
+              <li><a href="#">IOS & Android</a></li>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-info" id="GetTouch">
-          <p class="sub-header">Get In Touch</p>
-          <form id="footer-sub">
-            <label>
-              <input type="text" name="Message" placeholder="Your Email" />
-            </label>
-            <p><input type="submit" value="Subscribe" id="subscribe" /></p>
-          </form>
-          <p id="postSubTxt">Lorem ipsum dolor sit amet</p>
+          <div class="footer-info" id="GetTouch">
+            <p class="sub-header">Get In Touch</p>
+            <form class="footer-sub">
+              <label>
+                <input type="text" name="Message" placeholder="Your Email" />
+              </label>
+              <p><input type="submit" value="Subscribe" id="subscribe" /></p>
+            </form>
+            <p id="postSubTxt">Lorem ipsum dolor sit amet</p>
+          </div>
         </div>
       </div>
     </footer>
