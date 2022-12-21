@@ -79,6 +79,11 @@ h1{
     align-self: flex-end;
 }
 
+.navbar img{
+    height: 2rem;
+    width: 2rem;
+}
+
 section{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -541,13 +546,37 @@ hr{
 
     header{
         background-image: url(../img/Head-bg.jpg);
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
         
     }
 
     nav{
         display: none;
+    }
+    
+    .navlinks{
+        display: flex;
+        gap: 21px;
+        margin-right: 4rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navlinks a{
+        display: flex;
+        gap: 21px;
+        font-size: 14px;
+        line-height: 24px;
+
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: #737373;
+    }
+
+    .navlinks li{
+        display: inline;
     }
 
     .First-Class{
@@ -581,7 +610,7 @@ hr{
 
 @media screen and (min-width: 1120px){
     .contactform{
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
     }
 }
