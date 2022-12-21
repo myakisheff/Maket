@@ -505,6 +505,15 @@ footer a{
     line-height: 2.8rem;
 }
 
+#footeeHlinks{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    display: none;
+}
+
 @media screen and (min-width: 700px){
     #prebuttons{
         flex-direction: row;
@@ -552,6 +561,21 @@ footer a{
 
     .button{
         width: 16rem;
+    }
+
+    #footeeHlinks{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 14rem;
+    }
+
+    #ff{
+        margin-top: 7rem;
+    }
+
+    hr{
+        display: block;
+        border: 0.1px solid #364067;
     }
 }
 
