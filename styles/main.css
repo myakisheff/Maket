@@ -412,10 +412,13 @@ p{
 
 #appointment{
     margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 61rem;
+    width:  30.5rem;
     text-align: center;
+    justify-content: center;
 }
 
 #appointment input{
@@ -427,9 +430,10 @@ p{
 
 #appointment textarea{
     margin: 1rem;
-    width: 59rem;
+    width: 28.4rem;
     border-radius: .5rem;
     border: 1px solid var(--primary-text-color);
+    resize: none;
 }
 
 #appointment input{
@@ -509,12 +513,16 @@ footer a{
         padding-bottom: 8rem;
     }
 
-/*     .navlinks{
-        display: inline;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-    } */
+    #appointment textarea{
+        width: 59rem;
+    }
+
+    #appointment{
+        margin-left: 0;
+        margin-right: 0;
+        width: 61rem;
+        justify-content: left;
+    }
 
     h1{
         font-weight: 800;
@@ -526,6 +534,7 @@ footer a{
         background-image: url(../img/Head-bg.jpg);
         background-size: 100% 100%;
         background-position: center;
+        
     }
 
     nav{
