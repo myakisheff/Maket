@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalizer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="navbar">
+          <a href="index.html" id="logo">Consultal</a>
+
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button class="nav">
+            <img src="img/search.svg" alt="Поиск" />
+          </button>
+          <button class="nav"><img src="img/cart.svg" alt="Купить" /></button>
+          <button class="nav">
+            <img src="img/menu.svg" alt="Меню" />
+          </button>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <form id="appointment" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+
+          <p>
+            <span class="textt">Name:</span>
+            <label><input type="text" placeholder="Name" name="Name" required/></label>
+          </p>
+
+          <p>
+            <span class="textt">Birthday:</span>
+            <label><input type="date" name="Date" required/></label>
+          </p>
+
+          <p>
+            <span class="textt">Password:</span>
+            <label><input type="password" placeholder="password" name="Password" required/></label>
+          </p>
+
+          <p>
+            <span class="textt"class="textt">Email:</span>
+            <label><input type="email" placeholder="example@gmail.com" name="E-Mail" required/></label>
+          </p>
+
+          <p>
+            <span class="textt">Number:</span>
+            <label><input type="tel" placeholder="+7 (XXX)-XXX-XX-XX" name="Phone Number" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required/></label>
+          </p>
+
+          <div id="Gen"> 
+            <p>
+              <span class="textt">Gender:</span>
+              <label id="gender">
+                <label for="Male">Male</label>
+                <input type="radio" id="Male" name="Gender"/>
+                <label for="Female">Female</label>
+                <input type="radio" id="Female" name="Gender"/>
+              </label>
+            </p>
+          </div>
+          
+          
+          <div id="Tim">
+            <p>
+              <span class="textt">Time:</span>
+              <label id="contTime">
+                <label for="Morning">Morning</label>
+                <input type="radio" id="Morning" name="Time"/>
+                
+                <label for="Day">Day</label>
+                <input type="radio" id="Day" name="Time"/>
+                
+                <label for="Evening">Evening</label>
+                <input type="radio" id="Evening" name="Time"/>
+                
+                <label for="Night">Night</label>
+                <input type="radio" id="Night" name="Time"/>
+              </label>
+            </p>
+          </div>
+
+          <button type="submit" class="formbtn">Submit
+            <img src="/site/img/form/arrow_right.svg" alt="send" height="30">
+          </button>
+
+          <button type="reset" class="formbtn">Clear
+            <img src="/site/img/form/refresh.svg" alt="reset" height="30">
+          </button>
+
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div id="footeeHlinks">
+          <p id="footerhead">Consultal</p>
+
+          <div class="social-links">
+            <a href="//facebook.com/" target="_blank"
+              ><img src="img/social/facebook-logo.svg" alt="facebook"
+            /></a>
+            <a href="//instagram.com/" target="_blank"
+              ><img src="img/social/instagram-logo.svg" alt="instagram"
+            /></a>
+            <a href="//twitter.com/" target="_blank"
+              ><img src="img/social/twitter-logo.svg" alt="twitter"
+            /></a>
+            <a href="//www.youtube.com/" target="_blank"
+              ><img src="img/social/youtube-logo.svg" alt="youtube"
+            /></a>
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="ff">
+          <div class="footer-info">
+            <p class="sub-header">Company Info</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <p class="sub-header">Legal</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <p class="sub-header">Features</p>
+            <ul>
+              <li><a href="#">Buisness Marketing</a></li>
+              <li><a href="#">User Analytic</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-info">
+            <p class="sub-header">Resources</p>
+            <ul>
+              <li><a href="#">IOS & Android</a></li>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-info" id="GetTouch">
+            <p class="sub-header">Get In Touch</p>
+            <form class="footer-sub">
+              <label>
+                <input type="text" name="Message" placeholder="Your Email" />
+              </label>
+              <p><input type="submit" value="Subscribe" id="subscribe" /></p>
+            </form>
+            <p id="postSubTxt">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

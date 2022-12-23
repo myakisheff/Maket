@@ -331,7 +331,12 @@ a{
 video{
     margin-top: 5rem;
     margin-bottom: 8rem;
-    width: 30.6rem;
+    min-width: 30.6rem;
+    max-width: 87.7rem;
+    width: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    object-fit: cover;
 }
 
 .video{
@@ -389,7 +394,7 @@ p{
 
 .contactform{
     background-image: url(../img/contact-background.jpg);
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     padding-top: 9rem;
@@ -519,7 +524,7 @@ hr{
     display: none;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 650px){
     #prebuttons{
         flex-direction: row;
         justify-content: center;
@@ -605,12 +610,5 @@ hr{
     hr{
         display: block;
         border: 0.1px solid #364067;
-    }
-}
-
-@media screen and (min-width: 1120px){
-    .contactform{
-        background-size: cover;
-        background-position: center;
     }
 }
