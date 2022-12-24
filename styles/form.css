@@ -114,11 +114,15 @@ button[type="submit"] img,  button[type="reset"] img{
 
 #appointment input:focus{
     background-color: rgb(224, 226, 228);
-    border-color: #FF7B47;
     transition: all 0.5s ease-out;
-    translate: 1rem -1rem;
+
+    outline: none !important;
+    border: 1px solid #FF7B47;
+    box-shadow: 0 0 10px #719ECE;
+
+    /* translate: 1rem -1rem;
     rotate: -5deg;
-    scale: 1.05;
+    scale: 1.05; */
 }
 
 ::selection{
