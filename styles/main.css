@@ -450,6 +450,7 @@ input::-webkit-calendar-picker-indicator {
     border-radius: .5rem;
     border: 1px solid var(--primary-text-color);
     resize: none;
+    padding: 1rem;
 }
 
 #appointment input{
