@@ -314,6 +314,7 @@ a{
 .footer-sub input{
     height: 5.6rem;
     width: 20rem;
+    padding-left: 2rem;
 }
 
 .footer-sub p{
@@ -431,11 +432,16 @@ p{
     justify-content: center;
 }
 
+input::-webkit-calendar-picker-indicator {
+    opacity: 1;
+}
+
 #appointment input{
     width: 28.4rem;
     margin: 1rem;
     border-radius: .5rem;
     border: 1px solid var(--primary-text-color);
+    padding-left: 1.5rem;
 }
 
 #appointment textarea{
