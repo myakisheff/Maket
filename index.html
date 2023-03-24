@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/registrationStyle.css" />
     <title>Макет 3</title>
   </head>
   <body>
@@ -36,11 +37,11 @@
               <div id="reg">
                 <form role="form" method="POST">
                   <label>Email:
-                    <input type="email" name="Email" placeholder="example@email.com">
+                    <input type="email" name="Email" placeholder="example@email.com" required>
                   </label>
                   <label>Password:
-                    <input type="password" name="Password">
-                    <button class="showPas"><img src="img/openEye.png" alt="Показать"></button>
+                    <input type="password" id="password-input" placeholder="Enter password" name="password" required>
+	                  <a href="#" class="password-control"></a>
                   </label>
 
                   <button type="submit" class="submit-reg">Register</button>
