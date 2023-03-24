@@ -482,7 +482,7 @@ letter-spacing: .01rem;
 
 footer input{
     background-color: #F9F9F9;
-    color: var(--primary-fttext-color)
+    color: var(--primary-fttext-color);
 }
 
 .social-links img{
@@ -531,7 +531,104 @@ hr{
     display: none;
 }
 
-@media screen and (min-width: 650px){
+.registrationBtn{
+    width: 10rem;
+    height: 3rem;
+    margin: auto 2rem auto 0;
+    border-radius: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+/**/
+
+#reg {
+    display: none;
+    animation-duration: 1s;
+    animation-name: fadeIn;
+}
+  
+#reg form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reg form label{
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 25rem;
+    min-width: 15rem;
+}
+
+.showPas{
+    width: 4rem;
+    height: 2rem;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    translate: 100%;
+}
+
+#reg input{
+    border: #2c5154 1px solid;
+    border-radius: 0.5rem;
+    height: 2.2rem;
+}
+#reg input[type="password"]{
+    /* width: calc(100% - 4rem); */
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+}
+  
+  
+.popup__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 2rem;
+    width: 50%;
+    max-width: 40rem;
+    min-width: 25rem;
+    padding: 4rem;
+}
+  
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+.submit-reg{
+    margin: 1rem;
+    border-radius: 1.5rem;
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    color: var(--primary-fttext-color);
+}
+
+/**/
+
+@media screen and (min-width: 750px){
     #prebuttons{
         flex-direction: row;
         justify-content: center;
@@ -617,5 +714,14 @@ hr{
     hr{
         display: block;
         border: 0.1px solid #364067;
+    }
+
+    .registrationBtn{
+        width: 10rem;
+        height: 3rem;
+        margin: auto 2rem auto 0;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 1rem;
+        color: var(--primary-text-color);
     }
 }
