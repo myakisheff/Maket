@@ -36,12 +36,18 @@
             <div id="popup__container">
               <div id="reg">
                 <form role="form" method="POST" id="regform">
+
                   <label>Email:
-                    <input type="email" name="Email" placeholder="example@email.com" required>
+                    <input type="email" name="Email" placeholder="example@email.com" aria-describedby="email-validation" required>
+                    <span id="email-validation" aria-live="assertive" class="validation-message"></span>
                   </label>
+
                   <label>Password:
-                    <input type="password" id="password-input" placeholder="Enter password" name="password" minlength="6" required>
+                    <input type="password" id="password-input" placeholder="Enter password" 
+                    name="password" minlength="6" aria-describedby="password-validation" required>
+
 	                  <a href="#" class="password-control"></a>
+                    <span id="password-validation" aria-live="assertive" class="validation-message"></span>
                   </label>
 
                   <button type="submit" class="submit-reg">Register</button>

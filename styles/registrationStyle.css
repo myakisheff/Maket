@@ -36,6 +36,14 @@
     height: 2.3rem;
 }
 
+.validation-message {
+    min-height: 1em;
+    display: block;
+    padding-top: 0.4em;
+    color: red;
+    font-size: 1rem;
+  }
+
 .password-control {
 	position: absolute;
 	top: 22px;
