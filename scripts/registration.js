@@ -5,15 +5,19 @@ const passView = document.querySelector('.password-control');
 const passInput = document.querySelector('#password-input');
 
 button.addEventListener('click', () => {
-  form.classList.add('open');
   popup.style.display = "block";
   form.style.display = "block";
 });
 
-/* popup.addEventListener('click', () =>{
-  popup.style.display = "none";
-  form.style.display = "none";
-}); */
+popup.addEventListener('click', function(e) {
+  if (e.target.id == 'popup1') {
+    popup.style.display = "none";
+    form.style.display = "none";
+  }
+  else{
+    return;
+  }
+});
 
 passView.addEventListener('click', () => {
   if(passInput.getAttribute('type') == 'password'){

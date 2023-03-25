@@ -32,15 +32,15 @@
             Sign up
           </button>
 
-          <div class="popup">
-            <div class="popup__container">
+          <div class="popup" id="popup1">
+            <div id="popup__container">
               <div id="reg">
-                <form role="form" method="POST">
+                <form role="form" method="POST" id="regform">
                   <label>Email:
                     <input type="email" name="Email" placeholder="example@email.com" required>
                   </label>
                   <label>Password:
-                    <input type="password" id="password-input" placeholder="Enter password" name="password" required>
+                    <input type="password" id="password-input" placeholder="Enter password" name="password" minlength="6" required>
 	                  <a href="#" class="password-control"></a>
                   </label>
 
