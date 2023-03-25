@@ -46,9 +46,15 @@ form.addEventListener('blur', function (event) {
   const isValid = event.target.validity.valid;
 
   if(event.target == emailInput && !isValid)
+  {
+    console.log(32);
     emailInput.setCustomValidity('Please enter valid email. example@mail.com');
-  else if(event.target == passInput && !isValid)
+  }
+  if(event.target == passInput && !isValid)
+  {
+    console.log(23);
     passInput.setCustomValidity('Please use at least 6 characters.');
+  }
 
   const message = event.target.validationMessage;
   const connectedValidationId = event.target.getAttribute('aria-describedby');
@@ -59,18 +65,26 @@ form.addEventListener('blur', function (event) {
   } else {
     connectedValidation.innerText = '';
   }
-  passInput.setCustomValidity('');
   emailInput.setCustomValidity('');
+  passInput.setCustomValidity('');
 }, true);
 
 //send form
 form.addEventListener("submit", (event) => {
 
+  const isEmailValid = emailInput.validity.valid;
+  const isPassValid = passInput.validity.valid;
+
+  if(!isEmailValid || !isPassValid)
+    return;
+
   event.preventDefault();
 
-  var data = new FormData(form);
+  var formData = new FormData(form);
 
-  console.log(data);
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ': ' + pair[1]); 
+  }
 
   popup.style.display = "none";
   divform.style.display = "none";
