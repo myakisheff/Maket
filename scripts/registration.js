@@ -13,8 +13,8 @@ button.addEventListener('click', () => {
   divform.style.display = "block";
 });
 
-popup.addEventListener('click', function(e) {
-  if (e.target.id == 'popup1') {
+popup.addEventListener('click', function(event) {
+  if (event.target.id == 'popup1') {
     popup.style.display = "none";
     divform.style.display = "none";
   }
@@ -47,12 +47,10 @@ form.addEventListener('blur', function (event) {
 
   if(event.target == emailInput && !isValid)
   {
-    console.log(32);
     emailInput.setCustomValidity('Please enter valid email. example@mail.com');
   }
   if(event.target == passInput && !isValid)
   {
-    console.log(23);
     passInput.setCustomValidity('Please use at least 6 characters.');
   }
 
